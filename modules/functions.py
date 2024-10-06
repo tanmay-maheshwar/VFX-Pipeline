@@ -32,7 +32,7 @@ def print_department_structure(department_list_local):
             pass
 
 
-def write_departments(department_list):
+def write_departments(department_list, path = ""):
     with open("appReq/departments_temp.json",'w') as file:
         file.write(department_list)
 
