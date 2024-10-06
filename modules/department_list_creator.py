@@ -1,10 +1,21 @@
-import functions
+if __name__ == "__main__":
+    import functions
+    PERMANENT_PATH = "../appReq/departments.json"
+    TEMPORARY_PATH = "../appReq/departments_temp.json"
+
+else:
+
+    from modules import functions
+    PERMANENT_PATH = "appReq/departments.json"
+    TEMPORARY_PATH = "appReq/departments_temp.json"
+
 
 def department_list_editor():
+
     department_list = str(functions.get_departments())
     department_list = department_list.replace("'",'"')
 
-    functions.write_departments(department_list)
+    functions.write_departments(department_list,TEMPORARY_PATH)
 
     while True:
         user_action = (input("Do you to 'add','show','remove',edit subfolders' or 'exit':")).lower()
@@ -40,29 +51,26 @@ def department_list_editor():
             department_list_str = str(department_list)
             department_list_str = department_list_str.replace("'",'"')
 
-
-
-            with open("../appReq/departments_temp.json", 'w') as file:
-                file.write(department_list_str)
+            functions.write_departments(department_list_str, TEMPORARY_PATH)
 
 
 
         elif user_action.startswith('show'):
-            department_list = functions.get_departments("appReq/departments_temp.json")
+            department_list = functions.get_departments(TEMPORARY_PATH)
             functions.print_department_structure(department_list)
 
 
         elif user_action.startswith('remove'):
 
             try:
-                department_list = functions.get_departments("appReq/departments_temp.json")
+                department_list = functions.get_departments(TEMPORARY_PATH)
 
                 remove_department = int(user_action.strip('remove '))
                 department_list.pop(remove_department-1)
                 department_list = str(department_list)
                 department_list = department_list.replace("'",'"')
 
-                functions.write_departments(department_list)
+                functions.write_departments(department_list,TEMPORARY_PATH)
 
 
             except IndexError:
@@ -72,7 +80,7 @@ def department_list_editor():
 
         elif user_action.startswith('edit'):
             try:
-                department_list = functions.get_departments("appReq/departments_temp.json")
+                department_list = functions.get_departments(TEMPORARY_PATH)
                 edit_department_serial = int(user_action.strip("edit "))
 
                 new_subfolder_list = []
@@ -109,8 +117,7 @@ def department_list_editor():
                 department_list_str = str(department_list)
                 department_list_str = department_list_str.replace("'", '"')
 
-                with open("../appReq/departments_temp.json", 'w') as file:
-                    file.write(department_list_str)
+                functions.write_departments(department_list_str, TEMPORARY_PATH)
 
 
             except IndexError:

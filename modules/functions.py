@@ -1,7 +1,11 @@
 import json
 
+if __name__ == "__main__":
+    PATH = "../appReq/departments.json"
+else:
+    PATH = "appReq/departments.json"
 
-def get_departments(department_filepath = "appReq/departments.json"):
+def get_departments(department_filepath = PATH):
     with open(department_filepath) as file:
         departments_local = file.read()
         department_list_local = json.loads(departments_local)
@@ -32,8 +36,8 @@ def print_department_structure(department_list_local):
             pass
 
 
-def write_departments(department_list, path = ""):
-    with open("appReq/departments_temp.json",'w') as file:
+def write_departments(department_list, path = PATH):
+    with open(path,'w') as file:
         file.write(department_list)
 
 
