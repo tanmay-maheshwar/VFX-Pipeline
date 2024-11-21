@@ -1,0 +1,9 @@
+["assets",
+  {"cg": [{"Animation": ["Script","Playblast","Cache","Dump","Reference"]},
+    {"Lighting": ["Script","Renders","Dump"]},
+    {"Fx": ["Script","Caching","GeoForFx"]}]},
+  "comp",
+  "out",
+  "precomp"]
+
+

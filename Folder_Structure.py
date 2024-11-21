@@ -3,7 +3,7 @@ from modules import functions
 from modules import department_list_creator
 
 
-show_dir = r"C:\Users\Tanmay\Documents\Shows"
+show_dir = r"C:\Users\tanmay.maheshwari\Documents\Shows"
 show_name = input("Enter the Show name: ")
 
 show_types = ["commercial", "series","movie"]
