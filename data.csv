@@ -1,0 +1,10 @@
+#,SHOT_NUMBER,TASK,STATUS,THUMBNAIL,DEPARTMENT,ARTIST,START DATE,ETA,NOTES
+1,RL_03_SH_0080, Replace the banner text,WIP,NA,Compostiting,Darshan Borde,21/11/2024 16:30,21/11/2024 16:30,The font of the text on banner needs to be changed.
+2,RL_01_SH_0130,Add muzzle flashes to the gun,APP,NA,Rotoscopy,Tanmay Maheshwari,21/11/2024 16:30,24/12/2024 12:30,
+3,RL_06_SH_0040,Remove the Tree in the Bg,APP,NA,Compositing,Krishna Jejukar,21/11/2024 16:30,21/11/2024 16:30,
+4,RL_05_SH_200,Add the Flash effect to the character while he is running,NA,NA,Prep,Kaka,21/11/2024 16:30,21/11/2024 16:30,The flash effect should match in the sequence
+5,RL_03_SH_0260,Add Magical Effect to the spark,WIP,NA,Compositing,Vishal Mahale,21/11/2024 16:30,21/11/2024 16:30,Brightness of spark should be reduce to 50%
+6,RL_01_SH_0243,Face Cleanup,OMIT,NA,Animation,Tanmay Maheshwari,21/11/2024 16:30,31/01/2025 16:30,
+7,RL_02_SH_0190,Replace the prop wall to CG wall,NA,NA,Rotocopy,Rohit Chavan,21/11/2024 16:30,21/11/2024 16:30,Roto the fg character
+8,RL_03_SH_0869B,Remove the wire and the Rig,WIP,NA,Compositing,Yadeb Btala,21/11/2024/ 16:30,02/02/2025 06:30,
+9,RL_01_SH_0310,Add headlight to the bike and flash effect to the character,APP,NA,Prep,Darshan Borde,21/11/2024 16:30,21/11/2024 16:30,
