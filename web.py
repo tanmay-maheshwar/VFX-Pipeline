@@ -79,7 +79,7 @@ st.data_editor(df,key='my_data',
                             },
 
                hide_index=True,
-               height=700,
+               height=500,
 
 
               )
