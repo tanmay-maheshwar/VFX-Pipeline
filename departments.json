@@ -1,9 +1,12 @@
 ["assets",
-  {"cg": [{"Animation": ["Script","Playblast","Cache","Dump","Reference"]},
-    {"Lighting": ["Script","Renders","Dump"]},
-    {"Fx": ["Script","Caching","GeoForFx"]}]},
+  {"cg": ["Animation", "Rigging", "Lighting", "Texturing", "Layout", "Modeling", "Fx"]},
+  "client_out",
   "comp",
+  "dmp",
   "out",
-  "precomp"]
+  "precomp",
+  "prep",
+  "roto",
+  "scan"]
 
 
