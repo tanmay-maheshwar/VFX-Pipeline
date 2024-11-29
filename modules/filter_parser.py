@@ -2,9 +2,9 @@ import json
 
 
 if __name__ == '__main__':
-    PATH = '../appReq/filters.json'
+    PATH = '../appReq/status_filters.json'
 else:
-    PATH = './appReq/filters.json'
+    PATH = './appReq/status_filters.json'
 
 
 def filter_options(filepath = PATH):
